@@ -15,4 +15,13 @@ An Odin Project: Sign-up Form
 
 ## Let's see how we do...
 
+
+
+
+
+## References:
+
+
 Background image taken from: [unsplash.com](https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHdvcmslMjBvdXQlMjBneW18ZW58MHx8MHx8fDA%3D)
+
+Found an awesome logo by: [svgrepo.com](https://www.svgrepo.com/svg/444142/medieval-spartan)

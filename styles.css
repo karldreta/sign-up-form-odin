@@ -1,18 +1,32 @@
 @font-face {
-    font-family: BebasNeue;
+    font-family: Bebas;
+    src: url(/fonts/GFSNeohellenic-Regular.woff);
+}
+
+@font-face {
+    font-family: Bebas;
     src: url(/fonts/BebasNeue-Regular.ttf);
 }
 
 @font-face {
-    font-family: Kanit-Regular;
+    font-family: Kanit;
     src: url(/fonts/Kanit-Regular.woff);
 }
+
 
 :root {
     box-sizing: border-box;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    --spartan-red: #8b0000;
+    --spartan-black: #000000;
+    --spartan-darkgray: #2f2f2f;
+    --spartan-gray: #808080;
+    --spartan-lightgray: #525252;
+    --spartan-white: #ffffff;
+    --spartan-gold: #b8860b;
 }
 
 h1, h2, h3, p, a {
@@ -24,24 +38,21 @@ h1, h2, h3, p, a {
 }
 
 h1 {
-    font-family: BebasNeue;
+    font-family: Bebas;
     font-size: 50px;
     letter-spacing: 2px;
 }
 
-h2 {
-    margin-left: 30px;
-    font-family: BebasNeue;
-    letter-spacing: 1.5px;
+h2 a {
+    color: var(--spartan-red);
 }
 
 p {
-    font-family: Kanit-Regular;
-    opacity: .7;
+    font-family: Kanit;
+    color: var(--spartan-lightgray);
 }
 
 body {
-    position: relative;
     display: flex;
     height: 100vh;
     margin: 0;
@@ -57,23 +68,57 @@ body {
     background-position: center;
     width: 35%; /*Covers 35% left of the viewport */
     height: 100vh; /* To scale down to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    top: 120px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
     align-content: center;
-    width: 40px;
-    margin: 5px;
-    border: 2px solid black;
-    border-radius: 50px;
+    width: 100%;
+    height: 220px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgba(47, 47, 47, 0.7);;
 }
 
 .logo img {
-    width: 100%;
+    border: 4px solid var(--spartan-white);
+    border-radius: 50%;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo h1 {
+    /* border: 1px solid red; */
+    color: var(--spartan-white);
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    font-family: Greek;
+}
+
+footer {
+    margin-bottom: 10px;
+}
+
+.bg-img footer p {
+    color: var(--spartan-lightgray);
+    font-size: 12px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--spartan-lightgray);
+    text-decoration: underline;
 }
 
 main {
@@ -91,47 +136,88 @@ section {
 }
 
 form {
-    /* border: 1px solid red; */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
     margin-bottom: 30px;
-    font-family: Kanit-Regular;
+    font-family: Kanit;
+    width: 65vw;
+    margin-bottom: 50px;
+    justify-content: baseline;
+    box-shadow: 
+    0 -10px 15px rgba(0, 0, 0, 0.2),
+    0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-form .form-banner {
-    /* border: 1px solid black; */
-    margin-bottom: 50px;
-    margin: 35px;
+form h2 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: Bebas;
+    letter-spacing: 1.5px;
+    color: var(--spartan-darkgray);
+}
+
+.inputs {
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: baseline;
-    gap: 40px;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 600px;
+}
+
+.name-inputs,
+.contact-inputs,
+.pass-inputs {
+    display: flex;
+    gap: 50px;
 }
 
 label {
     display: block; /* Puts the label on top of input*/
-    opacity: .7;
+    color: var(--spartan-lightgray);
+    font-size: 15px;
+    width: fit-content;
 }
 
 input {
+    font-size: 15px;
     height: 25px;
     width: 250px;
-    margin-bottom: 15px;
+    border: 2px solid var(--spartan-gray);
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--spartan-gold);
+  }
+  
+
+.error {
+    /* border: 1px solid red; */
+    font-size: 13px;
+    color: var(--spartan-red);
+    height: 20px;
+    margin: 0;
+    width: fit-content;
 }
 
 button {
-    margin-left: 35px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     font-size: 17px;
-    font-family: Kanit-Regular;
-    padding: 10px 24px;
-    background-color: white;
-    color: black;
-    border-radius: 6px;
+    font-family: Kanit;
+    padding: 7px 30px;
+    background-color: var(--spartan-red);
+    color: var(--spartan-white);
+    border: 1px solid var(--spartan-red);
+    border-radius: 10px;
 }
 
 button:hover {
-    color: brown;
-    background-color: #D8B144;
+    transform: scale(1.1);
 }
 
-a {
-    color: brown;
+.member-login {
+    font-size: 20px;
+    margin-left: 30px;
 }
-

@@ -5,52 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <script src="/script.js" defer></script>
-    <title>The Agoge | Odin Project</title>
+    <title>Agoge | Odin Project</title>
 </head>
 <body>
     <div class="bg-img">
+        <div class="logo"><img src="/imgs/medieval-spartan-svgrepo-com.svg" alt="Spartan Helmet" referrerpolicy="no-referrer">
+        <h1>AGOGE</h1></div>
+        <footer>
+            <p>Photo by <a href="https://unsplash.com/@echaparro" target="_blank">Edgar Chaparro</a> on <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
+        </footer>
     </div>
     <main class="form-container">
-        <div class="logo"><img src="/imgs/medieval-spartan-svgrepo-com.svg" alt="Spartan Helmet"></div>
         <section>
-            <h1>The Agoge - Forge Your Strength, Discipline, and Resolve</h1>
+            <h1>Enlist NOW! Forge Your Strength, Discipline, and Resolve</h1>
             <p>Transform into an extraordinary warrior. Push your limits, enhance your fitness, and build an unbreakable spirit.</p>
         </section>
-        <form action="#" method="POST">
+        <form id="form" action="#" method="POST">
             <h2>Enter if You dare!</h2>
-            <div class="form-banner">
-                <div class="left-inputs">
+            <div class="inputs">
+                <div class="name-inputs">
                     <div>
                         <label for="firstName">FIRST NAME</label>
-                        <input id="firstName" type="text" name="firstName" placeholder="John">
+                        <input id="firstName" type="text" name="firstName" placeholder="John" required>
+                        <div class="error">First name is required</div>
                     </div>
-                    <div>
-                        <label for="userEmail">EMAIL</label>
-                        <input id="userEmail" type="email" name="userEmail" placeholder="JS@anymail.com">
-                    </div>
-                    <div>
-                        <label for="password">PASSWORD</label>
-                        <input id="password" type="password" name="password">
-                    </div>
-                </div>
-                <div class="right-inputs">
                     <div>
                         <label for="lastName">LAST NAME</label>
-                        <input id="lastName" type="text" name="lastName" placeholder="Script">
+                        <input id="lastName" type="text" name="lastName" placeholder="Script" required>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="contact-inputs">
+                    <div>
+                        <label for="userEmail">EMAIL</label>
+                        <input id="userEmail" type="email" name="userEmail" placeholder="JS@anymail.com" required>
+                        <div class="error"></div>
                     </div>
                     <div>
                         <label for="userPhone">PHONE NUMBER</label>
-                        <input id="userPhone" type="tel" name="userPhone" placeholder="(123)-456-789" >
+                        <input id="userPhone" type="tel" name="userPhone" placeholder="(123)-456-789" required>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="pass-inputs">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="password" name="password" required>
+                        <div class="error"></div>
                     </div>
                     <div>
                         <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                        <input id="passwordConfirm" type="password" name="passwordConfirm">
+                        <input id="passwordConfirm" type="password" name="passwordConfirm" required>
+                        <div class="error"></div>
                     </div>
                 </div>
             </div>
-            <button>Become an Initiate</button>         
         </form>
-        <h2>Already enlisted? <a href="#">Rejoin Training</a></h2>
+        <button form="form">Begin Initiation</button>      
+        <h2 class="member-login">Already enlisted? <a href="#">Rejoin Training</a></h2>
     </main>
 </body>
 </html>
