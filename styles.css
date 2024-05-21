@@ -1,14 +1,137 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kanit-Regular;
+    src: url(/fonts/Kanit-Regular.woff);
+}
+
 :root {
     box-sizing: border-box;
     overflow: hidden;
-}
-
-* {
-    /* border: 1px solid black; */
-}
-
-body {
-    display: flex;
     margin: 0;
     padding: 0;
 }
+
+h1, h2, h3, p, a {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+	vertical-align: baseline;
+}
+
+h1 {
+    font-family: BebasNeue;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-left: 30px;
+    font-family: BebasNeue;
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-family: Kanit-Regular;
+    opacity: .7;
+}
+
+body {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Kanit;
+}
+
+.bg-img {
+    
+    background-image: url('/imgs/photo-1526506118085-60ce8714f8c5.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35%; /*Covers 35% left of the viewport */
+    height: 100vh; /* To scale down to the bottom */
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+main {
+    width: 65%; /* Takes up the remaining 65% of the viewport */
+    height: 100vh; /* To scale down to the bottom */
+    overflow-y: auto;
+}
+
+section {
+    /* border: 1px solid red; */
+    width: 700px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+form {
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+    font-family: Kanit-Regular;
+}
+
+form .form-banner {
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+    margin: 35px;
+    display: flex;
+    justify-content: baseline;
+    gap: 40px;
+}
+
+label {
+    display: block; /* Puts the label on top of input*/
+    opacity: .7;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-left: 35px;
+    font-size: 17px;
+    font-family: Kanit-Regular;
+    padding: 10px 24px;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+}
+
+button:hover {
+    color: brown;
+    background-color: #D8B144;
+}
+
+a {
+    color: brown;
+}
+

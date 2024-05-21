@@ -9,40 +9,48 @@
 </head>
 <body>
     <div class="bg-img">
-        <img src="/imgs/photo-1526506118085-60ce8714f8c5.avif" alt="Man doing Pull-ups">
     </div>
     <main class="form-container">
+        <div class="logo"><img src="/imgs/medieval-spartan-svgrepo-com.svg" alt="Spartan Helmet"></div>
         <section>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cumque quisquam ad repudiandae magnam asperiores vitae natus non omnis! Deleniti natus magnam aliquam unde a voluptas maxime voluptate nulla delectus!</h1>
+            <h1>The Agoge - Forge Your Strength, Discipline, and Resolve</h1>
+            <p>Transform into an extraordinary warrior. Push your limits, enhance your fitness, and build an unbreakable spirit.</p>
         </section>
-        <form action="#" method="get">
-            <div>
-                <label for="firstName">First Name</label>
-                <input id="firstName" type="text">
+        <form action="#" method="POST">
+            <h2>Enter if You dare!</h2>
+            <div class="form-banner">
+                <div class="left-inputs">
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <input id="firstName" type="text" name="firstName" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="userEmail">EMAIL</label>
+                        <input id="userEmail" type="email" name="userEmail" placeholder="JS@anymail.com">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="password" name="password">
+                    </div>
+                </div>
+                <div class="right-inputs">
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input id="lastName" type="text" name="lastName" placeholder="Script">
+                    </div>
+                    <div>
+                        <label for="userPhone">PHONE NUMBER</label>
+                        <input id="userPhone" type="tel" name="userPhone" placeholder="(123)-456-789" >
+                    </div>
+                    <div>
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input id="passwordConfirm" type="password" name="passwordConfirm">
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="lastName">Last Name</label>
-                <input id="lastName" type="text">
-            </div>
-            <div>
-                <label for="userEmail">Email</label>
-                <input id="userEmail" type="email">
-            </div>
-            <div>
-                <label for="userPhone">Phone Number</label>
-                <input id="userPhone" type="tel">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input id="password" type="password">
-            </div>
-            <div>
-                <label for="passwordConfirm">Confirm Password</label>
-                <input id="passwordConfirm" type="password">
-            </div>
-            <button>Enlist as a Plebe</button>         
+            <button>Become an Initiate</button>         
         </form>
-        <h2>Already enlisted? <a href="#">Rejoin the Training</a></h2>
+        <h2>Already enlisted? <a href="#">Rejoin Training</a></h2>
     </main>
 </body>
 </html>
