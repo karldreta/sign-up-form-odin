@@ -24,45 +24,45 @@
             <h2>Enter if You dare!</h2>
             <div class="inputs">
                 <div class="name-inputs">
-                    <div>
-                        <label for="firstName">FIRST NAME</label>
-                        <input id="firstName" type="text" name="firstName" placeholder="John" required>
-                        <div class="error">First name is required</div>
+                    <div class="styleInput">
+                        <label class="label" for="firstName">FIRST NAME</label>
+                        <input id="firstName" type="text" name="firstName" placeholder="John" >
+                        <div class="showEffect"></div>
                     </div>
-                    <div>
-                        <label for="lastName">LAST NAME</label>
-                        <input id="lastName" type="text" name="lastName" placeholder="Script" required>
-                        <div class="error"></div>
+                    <div class="styleInput">
+                        <label class="label" for="lastName">LAST NAME</label>
+                        <input id="lastName" type="text" name="lastName" placeholder="Script" >
+                        <div class="showEffect"></div>
                     </div>
                 </div>
                 <div class="contact-inputs">
-                    <div>
-                        <label for="userEmail">EMAIL</label>
-                        <input id="userEmail" type="email" name="userEmail" placeholder="JS@anymail.com" required>
-                        <div class="error"></div>
+                    <div class="styleInput">
+                        <label class="label" for="userEmail">EMAIL</label>
+                        <input id="userEmail" type="text" name="userEmail" placeholder="JS@anymail.com" >
+                        <div class="showEffect"></div>
                     </div>
-                    <div>
-                        <label for="userPhone">PHONE NUMBER</label>
-                        <input id="userPhone" type="tel" name="userPhone" placeholder="(123)-456-789" required>
-                        <div class="error"></div>
+                    <div class="styleInput">
+                        <label class="label" for="userPhone">PHONE NUMBER</label>
+                        <input id="userPhone" type="tel" maxlength="14" name="userPhone" placeholder="(123) 456-7890">                        
+                        <div class="showEffect"></div>
                     </div>
                 </div>
                 <div class="pass-inputs">
-                    <div>
-                        <label for="password">PASSWORD</label>
-                        <input id="password" type="password" name="password" required>
-                        <div class="error"></div>
+                    <div class="styleInput">
+                        <label class="label" for="password">PASSWORD</label>
+                        <input id="password" type="password" name="password" maxlength="16" >
+                        <div class="showEffect"></div>
                     </div>
-                    <div>
-                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                        <input id="passwordConfirm" type="password" name="passwordConfirm" required>
-                        <div class="error"></div>
+                    <div class="styleInput">
+                        <label class="label" for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input id="passwordConfirm" type="password" name="passwordConfirm" maxlength="16" >
+                        <div class="showEffect"></div>
                     </div>
                 </div>
             </div>
         </form>
         <button form="form">Begin Initiation</button>      
-        <h2 class="member-login">Already enlisted? <a href="#">Rejoin Training</a></h2>
+        <h2 class="existing-member">Already enlisted? <a href="#">Rejoin Training</a></h2>
     </main>
 </body>
 </html>

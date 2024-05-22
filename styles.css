@@ -21,6 +21,7 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     --spartan-red: #8b0000;
+    --spartan-green: #008000;
     --spartan-black: #000000;
     --spartan-darkgray: #2f2f2f;
     --spartan-gray: #808080;
@@ -58,6 +59,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Kanit;
+    cursor: default;
 }
 
 .bg-img {
@@ -139,6 +141,7 @@ form {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     margin-bottom: 30px;
+    padding: 10px;
     font-family: Kanit;
     width: 65vw;
     margin-bottom: 50px;
@@ -189,17 +192,11 @@ input {
 
 input:focus {
     border: 2px solid var(--spartan-gold);
-  }
-  
-
-.error {
-    /* border: 1px solid red; */
-    font-size: 13px;
-    color: var(--spartan-red);
-    height: 20px;
-    margin: 0;
-    width: fit-content;
 }
+
+/* input:invalid:after {
+    border: 2px solid var(--spartan-red);
+}   */
 
 button {
     margin-left: 30px;
@@ -209,15 +206,41 @@ button {
     padding: 7px 30px;
     background-color: var(--spartan-red);
     color: var(--spartan-white);
-    border: 1px solid var(--spartan-red);
+    border: 2px solid var(--spartan-red);
     border-radius: 10px;
 }
 
 button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-.member-login {
+button:active {
+    background-color: var(--spartan-gold);
+    color: var(--spartan-red);
+}
+
+.existing-member {
     font-size: 20px;
     margin-left: 30px;
+}
+
+.existing-member a:active {
+    color: var(--spartan-gold);
+}
+
+.showEffect {
+    font-size: 13px;
+    color: var(--spartan-red);
+    height: 20px;
+    margin: 0;
+    width: fit-content;
+}
+
+.styleInput.success > input {
+    border: 2px solid var(--spartan-green);
+}
+
+.styleInput.error > input {
+    border: 2px solid var(--spartan-red);
 }
