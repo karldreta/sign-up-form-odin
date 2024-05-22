@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Bebas;
-    src: url(/fonts/BebasNeue-Regular.ttf);
+    src: url(/fonts/BebasNeue-Regular.woff);
 }
 
 @font-face {
@@ -63,8 +63,7 @@ body {
 }
 
 .bg-img {
-    
-    background-image: url('/imgs/photo-1526506118085-60ce8714f8c5.avif');
+    background-image: url('imgs/photo-1526506118085-60ce8714f8c5.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
