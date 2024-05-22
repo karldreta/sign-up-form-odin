@@ -64,12 +64,14 @@ function validateInputs() {
         displayError(password, "Password is required");
     } else if (passwordValue.length < 8 || passwordValue.length > 16) {
         displayError(password, "Password must contain 8-16 Characters")
+    } else if (passwordValue != passwordConfirmValue) {
+        displayError(password, "Passwords don't match");
     } else {
         displaySuccess(password);
     }
 
     if (passwordConfirmValue === "") {
-        displayError(passwordConfirm, "Confirm Password.")
+        displayError(passwordConfirm, "Confirm Password")
     } else if (passwordConfirmValue != passwordValue) {
         displayError(passwordConfirm, "Passwords don't match");
     } else {
@@ -82,7 +84,7 @@ function displayError(element, message) {
     const inputContainer = element.parentElement;
     const showEffect = inputContainer.querySelector('.showEffect');
 
-    showEffect.textContent = message;
+    showEffect.textContent = `*${message}`;
     inputContainer.classList.add('error');
     inputContainer.classList.remove('success');
 }

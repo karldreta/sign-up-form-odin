@@ -100,7 +100,6 @@ body {
 }
 
 .logo h1 {
-    /* border: 1px solid red; */
     color: var(--spartan-white);
     font-size: 70px;
     padding: 0;
@@ -130,7 +129,6 @@ main {
 }
 
 section {
-    /* border: 1px solid red; */
     width: 700px;
     margin-top: 80px;
     margin-bottom: 40px;
@@ -161,7 +159,6 @@ form h2 {
 }
 
 .inputs {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin-left: 30px;
@@ -190,13 +187,6 @@ input {
     outline: none;
 }
 
-input:focus {
-    border: 2px solid var(--spartan-gold);
-}
-
-/* input:invalid:after {
-    border: 2px solid var(--spartan-red);
-}   */
 
 button {
     margin-left: 30px;
@@ -243,4 +233,10 @@ button:active {
 
 .styleInput.error > input {
     border: 2px solid var(--spartan-red);
+}
+
+.styleInput.success:focus,
+.styleInput.error:focus,
+input:focus {
+    border: 2px solid var(--spartan-gold);
 }
