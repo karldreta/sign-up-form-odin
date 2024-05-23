@@ -1,6 +1,6 @@
 @font-face {
     font-family: Greek;
-    src: url('/fonts/GFSNeohellenic-Regular.woff');
+    src: url('fonts/GFSNeohellenic-Regular.woff');
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Kanit;
-    src: url('/fonts/Kanit-Regular.woff');
+    src: url('fonts/Kanit-Regular.woff');
 }
 
 
