@@ -1,16 +1,16 @@
 @font-face {
     font-family: Greek;
-    src: url(/fonts/GFSNeohellenic-Regular.woff);
+    src: url('/fonts/GFSNeohellenic-Regular.woff');
 }
 
 @font-face {
     font-family: Bebas;
-    src: url(/fonts/BebasNeue-Regular.woff);
+    src: url('fonts/BebasNeue-Regular.woff');
 }
 
 @font-face {
     font-family: Kanit;
-    src: url(/fonts/Kanit-Regular.woff);
+    src: url('/fonts/Kanit-Regular.woff');
 }
 
 
